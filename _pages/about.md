@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/
 ---
 
-This is where you put the contents of your *About* page. Like all your pages, it's in [Markdown](https://guides.github.com/features/mastering-markdown/) format.
+Hello! My name is Tochukwu and I'm a beginner deep Learning practitioner trying to make sense of this broad field one commit at a time.
 
 This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
 
