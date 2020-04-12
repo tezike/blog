@@ -266,6 +266,15 @@ window.onload = wrap_img;
 <div class="output_area">
 
 
+<div class="output_html rendered_html output_subarea ">
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+
 
 <div class="output_text output_subarea output_execute_result">
 <pre>(#2) [Path('/root/.fastai/data/oxford-iiit-pet/annotations'),Path('/root/.fastai/data/oxford-iiit-pet/images')]</pre>
@@ -1100,7 +1109,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">files</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">files</span><span class="p">[:</span><span class="mi">5</span><span class="p">])</span>
 </pre></div>
 
     </div>
@@ -1112,12 +1121,10 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>(#5) [Path('/root/.fastai/data/oxford-iiit-pet/images/chihuahua_22.jpg'),Path('/root/.fastai/data/oxford-iiit-pet/images/english_setter_138.jpg'),Path('/root/.fastai/data/oxford-iiit-pet/images/Persian_176.jpg'),Path('/root/.fastai/data/oxford-iiit-pet/images/scottish_terrier_180.jpg'),Path('/root/.fastai/data/oxford-iiit-pet/images/Siamese_144.jpg')]</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(#5) [Path('/root/.fastai/data/oxford-iiit-pet/images/chihuahua_22.jpg'),Path('/root/.fastai/data/oxford-iiit-pet/images/english_setter_138.jpg'),Path('/root/.fastai/data/oxford-iiit-pet/images/Persian_176.jpg'),Path('/root/.fastai/data/oxford-iiit-pet/images/scottish_terrier_180.jpg'),Path('/root/.fastai/data/oxford-iiit-pet/images/Siamese_144.jpg')]
+</pre>
 </div>
-
 </div>
 
 </div>
@@ -1819,75 +1826,6 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dset</span><span class="o">.</span><span class="n">train</span><span class="p">,</span> <span class="n">dset</span><span class="o">.</span><span class="n">valid</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>((#5912) [(Path('/root/.fastai/data/oxford-iiit-pet/images/Ragdoll_194.jpg'), Path('/root/.fastai/data/oxford-iiit-pet/images/Ragdoll_194.jpg')),(Path('/root/.fastai/data/oxford-iiit-pet/images/Sphynx_92.jpg'), Path('/root/.fastai/data/oxford-iiit-pet/images/Sphynx_92.jpg')),(Path('/root/.fastai/data/oxford-iiit-pet/images/Sphynx_77.jpg'), Path('/root/.fastai/data/oxford-iiit-pet/images/Sphynx_77.jpg')),(Path('/root/.fastai/data/oxford-iiit-pet/images/scottish_terrier_130.jpg'), Path('/root/.fastai/data/oxford-iiit-pet/images/scottish_terrier_130.jpg')),(Path('/root/.fastai/data/oxford-iiit-pet/images/Russian_Blue_62.jpg'), Path('/root/.fastai/data/oxford-iiit-pet/images/Russian_Blue_62.jpg')),(Path('/root/.fastai/data/oxford-iiit-pet/images/Siamese_193.jpg'), Path('/root/.fastai/data/oxford-iiit-pet/images/Siamese_193.jpg')),(Path('/root/.fastai/data/oxford-iiit-pet/images/shiba_inu_21.jpg'), Path('/root/.fastai/data/oxford-iiit-pet/images/shiba_inu_21.jpg')),(Path('/root/.fastai/data/oxford-iiit-pet/images/american_bulldog_92.jpg'), Path('/root/.fastai/data/oxford-iiit-pet/images/american_bulldog_92.jpg')),(Path('/root/.fastai/data/oxford-iiit-pet/images/Sphynx_27.jpg'), Path('/root/.fastai/data/oxford-iiit-pet/images/Sphynx_27.jpg')),(Path('/root/.fastai/data/oxford-iiit-pet/images/yorkshire_terrier_41.jpg'), Path('/root/.fastai/data/oxford-iiit-pet/images/yorkshire_terrier_41.jpg'))...],
- (#1478) [(Path('/root/.fastai/data/oxford-iiit-pet/images/Russian_Blue_21.jpg'), Path('/root/.fastai/data/oxford-iiit-pet/images/Russian_Blue_21.jpg')),(Path('/root/.fastai/data/oxford-iiit-pet/images/keeshond_131.jpg'), Path('/root/.fastai/data/oxford-iiit-pet/images/keeshond_131.jpg')),(Path('/root/.fastai/data/oxford-iiit-pet/images/german_shorthaired_151.jpg'), Path('/root/.fastai/data/oxford-iiit-pet/images/german_shorthaired_151.jpg')),(Path('/root/.fastai/data/oxford-iiit-pet/images/boxer_48.jpg'), Path('/root/.fastai/data/oxford-iiit-pet/images/boxer_48.jpg')),(Path('/root/.fastai/data/oxford-iiit-pet/images/yorkshire_terrier_62.jpg'), Path('/root/.fastai/data/oxford-iiit-pet/images/yorkshire_terrier_62.jpg')),(Path('/root/.fastai/data/oxford-iiit-pet/images/chihuahua_171.jpg'), Path('/root/.fastai/data/oxford-iiit-pet/images/chihuahua_171.jpg')),(Path('/root/.fastai/data/oxford-iiit-pet/images/Maine_Coon_254.jpg'), Path('/root/.fastai/data/oxford-iiit-pet/images/Maine_Coon_254.jpg')),(Path('/root/.fastai/data/oxford-iiit-pet/images/miniature_pinscher_184.jpg'), Path('/root/.fastai/data/oxford-iiit-pet/images/miniature_pinscher_184.jpg')),(Path('/root/.fastai/data/oxford-iiit-pet/images/Abyssinian_50.jpg'), Path('/root/.fastai/data/oxford-iiit-pet/images/Abyssinian_50.jpg')),(Path('/root/.fastai/data/oxford-iiit-pet/images/staffordshire_bull_terrier_202.jpg'), Path('/root/.fastai/data/oxford-iiit-pet/images/staffordshire_bull_terrier_202.jpg'))...])</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dset</span><span class="o">.</span><span class="n">train</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">len</span><span class="p">(</span><span class="n">dset</span><span class="o">.</span><span class="n">train</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>((Path('/root/.fastai/data/oxford-iiit-pet/images/Ragdoll_194.jpg'),
-  Path('/root/.fastai/data/oxford-iiit-pet/images/Ragdoll_194.jpg')),
- 5912)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -2143,26 +2081,9 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">path</span> <span class="o">=</span> <span class="n">untar_data</span><span class="p">(</span><span class="n">URLs</span><span class="o">.</span><span class="n">PASCAL_2007</span><span class="p">)</span>
-<span class="p">(</span><span class="n">path</span><span class="o">.</span><span class="n">ls</span><span class="p">())</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>(#9) [Path('/root/.fastai/data/pascal_2007/train'),Path('/root/.fastai/data/pascal_2007/models'),Path('/root/.fastai/data/pascal_2007/valid.json'),Path('/root/.fastai/data/pascal_2007/test.json'),Path('/root/.fastai/data/pascal_2007/segmentation'),Path('/root/.fastai/data/pascal_2007/test'),Path('/root/.fastai/data/pascal_2007/train.csv'),Path('/root/.fastai/data/pascal_2007/test.csv'),Path('/root/.fastai/data/pascal_2007/train.json')]</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -2995,7 +2916,6 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">path</span> <span class="o">=</span> <span class="n">untar_data</span><span class="p">(</span><span class="n">URLs</span><span class="o">.</span><span class="n">CAMVID_TINY</span><span class="p">)</span>
-<span class="n">path</span><span class="o">.</span><span class="n">ls</span><span class="p">(),</span> <span class="nb">len</span><span class="p">((</span><span class="n">path</span><span class="o">/</span><span class="s1">'images'</span><span class="p">)</span><span class="o">.</span><span class="n">ls</span><span class="p">())</span>
 </pre></div>
 
     </div>
@@ -3008,10 +2928,8 @@ window.onload = wrap_img;
 <div class="output_area">
 
 
+<div class="output_html rendered_html output_subarea ">
 
-<div class="output_text output_subarea output_execute_result">
-<pre>((#4) [Path('/root/.fastai/data/camvid_tiny/labels'),Path('/root/.fastai/data/camvid_tiny/models'),Path('/root/.fastai/data/camvid_tiny/codes.txt'),Path('/root/.fastai/data/camvid_tiny/images')],
- 100)</pre>
 </div>
 
 </div>
@@ -3111,7 +3029,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">path</span><span class="o">/</span><span class="s1">'images'</span><span class="p">)</span><span class="o">.</span><span class="n">ls</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">((</span><span class="n">path</span><span class="o">/</span><span class="s1">'images'</span><span class="p">)</span><span class="o">.</span><span class="n">ls</span><span class="p">())</span>
 </pre></div>
 
     </div>
@@ -3123,12 +3041,10 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>(#100) [Path('/root/.fastai/data/camvid_tiny/images/Seq05VD_f04530.png'),Path('/root/.fastai/data/camvid_tiny/images/0016E5_05730.png'),Path('/root/.fastai/data/camvid_tiny/images/0016E5_08400.png'),Path('/root/.fastai/data/camvid_tiny/images/0016E5_06570.png'),Path('/root/.fastai/data/camvid_tiny/images/0016E5_08057.png'),Path('/root/.fastai/data/camvid_tiny/images/0016E5_00720.png'),Path('/root/.fastai/data/camvid_tiny/images/0001TP_010200.png'),Path('/root/.fastai/data/camvid_tiny/images/0001TP_009840.png'),Path('/root/.fastai/data/camvid_tiny/images/0006R0_f02610.png'),Path('/root/.fastai/data/camvid_tiny/images/0016E5_01260.png')...]</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(#100) [Path('/root/.fastai/data/camvid_tiny/images/Seq05VD_f04530.png'),Path('/root/.fastai/data/camvid_tiny/images/0016E5_05730.png'),Path('/root/.fastai/data/camvid_tiny/images/0016E5_08400.png'),Path('/root/.fastai/data/camvid_tiny/images/0016E5_06570.png'),Path('/root/.fastai/data/camvid_tiny/images/0016E5_08057.png'),Path('/root/.fastai/data/camvid_tiny/images/0016E5_00720.png'),Path('/root/.fastai/data/camvid_tiny/images/0001TP_010200.png'),Path('/root/.fastai/data/camvid_tiny/images/0001TP_009840.png'),Path('/root/.fastai/data/camvid_tiny/images/0006R0_f02610.png'),Path('/root/.fastai/data/camvid_tiny/images/0016E5_01260.png')...]
+</pre>
 </div>
-
 </div>
 
 </div>
@@ -3144,7 +3060,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">path</span><span class="o">/</span><span class="s1">'labels'</span><span class="p">)</span><span class="o">.</span><span class="n">ls</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">((</span><span class="n">path</span><span class="o">/</span><span class="s1">'labels'</span><span class="p">)</span><span class="o">.</span><span class="n">ls</span><span class="p">())</span>
 </pre></div>
 
     </div>
@@ -3156,12 +3072,10 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>(#100) [Path('/root/.fastai/data/camvid_tiny/labels/0001TP_007500_P.png'),Path('/root/.fastai/data/camvid_tiny/labels/0006R0_f02610_P.png'),Path('/root/.fastai/data/camvid_tiny/labels/Seq05VD_f03090_P.png'),Path('/root/.fastai/data/camvid_tiny/labels/Seq05VD_f00210_P.png'),Path('/root/.fastai/data/camvid_tiny/labels/0016E5_08125_P.png'),Path('/root/.fastai/data/camvid_tiny/labels/0006R0_f03720_P.png'),Path('/root/.fastai/data/camvid_tiny/labels/0001TP_008400_P.png'),Path('/root/.fastai/data/camvid_tiny/labels/0016E5_08093_P.png'),Path('/root/.fastai/data/camvid_tiny/labels/0001TP_009840_P.png'),Path('/root/.fastai/data/camvid_tiny/labels/Seq05VD_f00480_P.png')...]</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(#100) [Path('/root/.fastai/data/camvid_tiny/labels/0001TP_007500_P.png'),Path('/root/.fastai/data/camvid_tiny/labels/0006R0_f02610_P.png'),Path('/root/.fastai/data/camvid_tiny/labels/Seq05VD_f03090_P.png'),Path('/root/.fastai/data/camvid_tiny/labels/Seq05VD_f00210_P.png'),Path('/root/.fastai/data/camvid_tiny/labels/0016E5_08125_P.png'),Path('/root/.fastai/data/camvid_tiny/labels/0006R0_f03720_P.png'),Path('/root/.fastai/data/camvid_tiny/labels/0001TP_008400_P.png'),Path('/root/.fastai/data/camvid_tiny/labels/0016E5_08093_P.png'),Path('/root/.fastai/data/camvid_tiny/labels/0001TP_009840_P.png'),Path('/root/.fastai/data/camvid_tiny/labels/Seq05VD_f00480_P.png')...]
+</pre>
 </div>
-
 </div>
 
 </div>
@@ -3702,7 +3616,7 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">path</span> <span class="o">=</span> <span class="n">untar_data</span><span class="p">(</span><span class="n">URLs</span><span class="o">.</span><span class="n">COCO_TINY</span><span class="p">)</span>
-<span class="n">path</span><span class="o">.</span><span class="n">ls</span><span class="p">(),</span> <span class="nb">len</span><span class="p">((</span><span class="n">path</span><span class="o">/</span><span class="s1">'train'</span><span class="p">)</span><span class="o">.</span><span class="n">ls</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">path</span><span class="o">.</span><span class="n">ls</span><span class="p">(),</span> <span class="nb">len</span><span class="p">((</span><span class="n">path</span><span class="o">/</span><span class="s1">'train'</span><span class="p">)</span><span class="o">.</span><span class="n">ls</span><span class="p">()))</span>
 </pre></div>
 
     </div>
@@ -3714,22 +3628,10 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-
-<div class="output_html rendered_html output_subarea ">
-
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(#2) [Path('/root/.fastai/data/coco_tiny/train'),Path('/root/.fastai/data/coco_tiny/train.json')] 200
+</pre>
 </div>
-
-</div>
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>((#2) [Path('/root/.fastai/data/coco_tiny/train'),Path('/root/.fastai/data/coco_tiny/train.json')],
- 200)</pre>
-</div>
-
 </div>
 
 </div>
@@ -3911,7 +3813,7 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">files</span> <span class="o">=</span> <span class="n">get_image_files</span><span class="p">(</span><span class="n">path</span><span class="o">/</span><span class="s1">'train'</span><span class="p">)</span>
-<span class="n">files</span><span class="p">[:</span><span class="mi">5</span><span class="p">],</span> <span class="nb">len</span><span class="p">(</span><span class="n">files</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">files</span><span class="p">[:</span><span class="mi">5</span><span class="p">],</span> <span class="nb">len</span><span class="p">(</span><span class="n">files</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -3923,13 +3825,10 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>((#5) [Path('/root/.fastai/data/coco_tiny/train/000000012754.jpg'),Path('/root/.fastai/data/coco_tiny/train/000000533888.jpg'),Path('/root/.fastai/data/coco_tiny/train/000000213103.jpg'),Path('/root/.fastai/data/coco_tiny/train/000000457735.jpg'),Path('/root/.fastai/data/coco_tiny/train/000000457461.jpg')],
- 200)</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(#5) [Path('/root/.fastai/data/coco_tiny/train/000000012754.jpg'),Path('/root/.fastai/data/coco_tiny/train/000000533888.jpg'),Path('/root/.fastai/data/coco_tiny/train/000000213103.jpg'),Path('/root/.fastai/data/coco_tiny/train/000000457735.jpg'),Path('/root/.fastai/data/coco_tiny/train/000000457461.jpg')] 200
+</pre>
 </div>
-
 </div>
 
 </div>
@@ -4091,15 +3990,6 @@ window.onload = wrap_img;
 <div class="output_area">
 
 
-<div class="output_html rendered_html output_subarea ">
-
-</div>
-
-</div>
-
-<div class="output_area">
-
-
 
 <div class="output_text output_subarea output_execute_result">
 <pre>(#2) [Path('/root/.fastai/data/imagewoof2/train'),Path('/root/.fastai/data/imagewoof2/val')]</pre>
@@ -4120,7 +4010,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">path</span><span class="o">/</span><span class="s1">'train'</span><span class="p">)</span><span class="o">.</span><span class="n">ls</span><span class="p">(),</span> <span class="p">(</span><span class="n">path</span><span class="o">/</span><span class="s1">'train/n02096294'</span><span class="p">)</span><span class="o">.</span><span class="n">ls</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">((</span><span class="n">path</span><span class="o">/</span><span class="s1">'train'</span><span class="p">)</span><span class="o">.</span><span class="n">ls</span><span class="p">()[:</span><span class="mi">2</span><span class="p">]);</span> <span class="nb">print</span><span class="p">((</span><span class="n">path</span><span class="o">/</span><span class="s1">'train/n02096294'</span><span class="p">)</span><span class="o">.</span><span class="n">ls</span><span class="p">()[:</span><span class="mi">2</span><span class="p">])</span>
 </pre></div>
 
     </div>
@@ -4132,13 +4022,11 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>((#10) [Path('/root/.fastai/data/imagewoof2/train/n02088364'),Path('/root/.fastai/data/imagewoof2/train/n02096294'),Path('/root/.fastai/data/imagewoof2/train/n02089973'),Path('/root/.fastai/data/imagewoof2/train/n02086240'),Path('/root/.fastai/data/imagewoof2/train/n02093754'),Path('/root/.fastai/data/imagewoof2/train/n02115641'),Path('/root/.fastai/data/imagewoof2/train/n02099601'),Path('/root/.fastai/data/imagewoof2/train/n02105641'),Path('/root/.fastai/data/imagewoof2/train/n02111889'),Path('/root/.fastai/data/imagewoof2/train/n02087394')],
- (#943) [Path('/root/.fastai/data/imagewoof2/train/n02096294/n02096294_604.JPEG'),Path('/root/.fastai/data/imagewoof2/train/n02096294/n02096294_1449.JPEG'),Path('/root/.fastai/data/imagewoof2/train/n02096294/n02096294_5984.JPEG'),Path('/root/.fastai/data/imagewoof2/train/n02096294/n02096294_1527.JPEG'),Path('/root/.fastai/data/imagewoof2/train/n02096294/n02096294_1298.JPEG'),Path('/root/.fastai/data/imagewoof2/train/n02096294/ILSVRC2012_val_00041653.JPEG'),Path('/root/.fastai/data/imagewoof2/train/n02096294/n02096294_6785.JPEG'),Path('/root/.fastai/data/imagewoof2/train/n02096294/n02096294_5193.JPEG'),Path('/root/.fastai/data/imagewoof2/train/n02096294/n02096294_11667.JPEG'),Path('/root/.fastai/data/imagewoof2/train/n02096294/n02096294_8927.JPEG')...])</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(#2) [Path('/root/.fastai/data/imagewoof2/train/n02088364'),Path('/root/.fastai/data/imagewoof2/train/n02096294')]
+(#2) [Path('/root/.fastai/data/imagewoof2/train/n02096294/n02096294_604.JPEG'),Path('/root/.fastai/data/imagewoof2/train/n02096294/n02096294_1449.JPEG')]
+</pre>
 </div>
-
 </div>
 
 </div>
@@ -4198,6 +4086,14 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>to confirm we have spliited, let's check the lenght</p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -4339,15 +4235,11 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<details class="description">
-      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
-        <p></p>
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-hide</span>
-<span class="c1"># categorize changes the labels to numericals categories</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># categorize changes the labels to numericals categories</span>
 <span class="n">cat</span> <span class="o">=</span> <span class="n">Categorize</span><span class="p">()</span>
 <span class="n">Datasets</span><span class="p">([</span><span class="s1">'A'</span><span class="p">,</span> <span class="s1">'B'</span><span class="p">,</span> <span class="s1">'C'</span><span class="p">],</span> <span class="n">tfms</span><span class="o">=</span><span class="p">[</span><span class="n">cat</span><span class="p">])</span>
 <span class="c1"># vocab shows all the classes and to get the id for each class, pass it into cat</span>
@@ -4358,7 +4250,6 @@ window.onload = wrap_img;
 </div>
 </div>
 
-    </details>
 <div class="output_wrapper">
 <div class="output">
 
@@ -4406,15 +4297,11 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<details class="description">
-      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
-        <p></p>
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-hide</span>
-<span class="c1"># this reads as for the images, create them as pillow images, for the labels, </span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">]</span><span class="c1"># this reads as for the images, create them as pillow images, for the labels, </span>
 <span class="c1"># get the labels from the parents in the files L and convert them to categories</span>
 <span class="n">ds_tfms</span> <span class="o">=</span> <span class="p">[[</span><span class="n">PILImage</span><span class="o">.</span><span class="n">create</span><span class="p">],</span> <span class="p">[</span><span class="n">parent_label</span><span class="p">,</span> <span class="n">Categorize</span><span class="p">()]]</span>
 </pre></div>
@@ -4423,32 +4310,26 @@ window.onload = wrap_img;
 </div>
 </div>
 
-    </details>
 </div>
     
 
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<details class="description">
-      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
-        <p></p>
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-hide</span>
-<span class="c1"># n_inp tells the dataset that there is only one tfm child-list for the image. </span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># n_inp tells the dataset that there is only one tfm child-list for the image. </span>
 <span class="c1"># Comes in handy when you have 3 child-lists transforms. The default is 1</span>
 <span class="n">dsets</span> <span class="o">=</span> <span class="n">Datasets</span><span class="p">(</span><span class="n">files</span><span class="p">,</span> <span class="n">tfms</span><span class="o">=</span><span class="n">ds_tfms</span><span class="p">,</span> <span class="n">splits</span><span class="o">=</span><span class="n">split_idxs</span><span class="p">,</span> <span class="n">n_inp</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">dsets</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dsets</span><span class="p">)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-    </details>
 <div class="output_wrapper">
 <div class="output">
 
