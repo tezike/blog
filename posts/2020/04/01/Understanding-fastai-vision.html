@@ -148,7 +148,11 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h3"><a href="#The-DATABLOCK">The DATABLOCK </a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#Unto-another-task!!!">Unto another task!!! </a></li>
+<li class="toc-entry toc-h2"><a href="#Unto-another-task!!!">Unto another task!!! </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Midlevel-API">Midlevel API </a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h2"><a href="#Segmentation">Segmentation </a></li>
 <li class="toc-entry toc-h2"><a href="#Images-with-bounding-boxes">Images with bounding boxes </a></li>
 <li class="toc-entry toc-h2"><a href="#fin">fin </a></li>
@@ -1990,11 +1994,15 @@ SimpleNamespace(anyname_i_want='whatever i want can be here')
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">DataBlock</span><span class="p">(</span><span class="n">blocks</span><span class="o">=</span><span class="p">(</span><span class="n">ImageBlock</span><span class="p">,</span> <span class="n">CategoryBlock</span><span class="p">),</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-hide</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">DataBlock</span><span class="p">(</span><span class="n">blocks</span><span class="o">=</span><span class="p">(</span><span class="n">ImageBlock</span><span class="p">,</span> <span class="n">CategoryBlock</span><span class="p">),</span>
                  <span class="n">get_items</span><span class="o">=</span><span class="n">get_image_files</span><span class="p">,</span>
                  <span class="n">splitter</span><span class="o">=</span><span class="n">RandomSplitter</span><span class="p">(</span><span class="n">valid_pct</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="mi">42</span><span class="p">),</span>
                  <span class="c1">#using_attr takes the second argument as an attribute for x and </span>
@@ -2008,6 +2016,7 @@ SimpleNamespace(anyname_i_want='whatever i want can be here')
 </div>
 </div>
 
+    </details>
 </div>
     
 
@@ -2023,11 +2032,15 @@ SimpleNamespace(anyname_i_want='whatever i want can be here')
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">DataBlock</span><span class="p">(</span><span class="n">blocks</span> <span class="o">=</span> <span class="p">(</span><span class="n">ImageBlock</span><span class="p">,</span> <span class="n">CategoryBlock</span><span class="p">),</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-hide</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">DataBlock</span><span class="p">(</span><span class="n">blocks</span> <span class="o">=</span> <span class="p">(</span><span class="n">ImageBlock</span><span class="p">,</span> <span class="n">CategoryBlock</span><span class="p">),</span>
                 <span class="c1">#  this time we use a get_x instead of a get_item</span>
                  <span class="n">get_x</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">o</span><span class="p">:</span> <span class="n">o</span><span class="p">,</span>
                  <span class="n">splitter</span> <span class="o">=</span> <span class="n">RandomSplitter</span><span class="p">(</span><span class="n">valid_pct</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="mi">42</span><span class="p">),</span>
@@ -2040,6 +2053,7 @@ SimpleNamespace(anyname_i_want='whatever i want can be here')
 </div>
 </div>
 
+    </details>
 </div>
     
 
@@ -2320,11 +2334,15 @@ SimpleNamespace(anyname_i_want='whatever i want can be here')
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dls</span> <span class="o">=</span> <span class="n">ImageDataLoaders</span><span class="o">.</span><span class="n">from_df</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-hide</span>
+<span class="n">dls</span> <span class="o">=</span> <span class="n">ImageDataLoaders</span><span class="o">.</span><span class="n">from_df</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span>
                               <span class="c1">#  name if the folders containing the data in df</span>
                                <span class="n">folder</span><span class="o">=</span><span class="s1">'train'</span><span class="p">,</span> 
                               <span class="c1">#  name of column in the df that houses the filenames </span>
@@ -2339,6 +2357,7 @@ SimpleNamespace(anyname_i_want='whatever i want can be here')
 </div>
 </div>
 
+    </details>
 </div>
     
 
@@ -2866,8 +2885,9 @@ SimpleNamespace(anyname_i_want='whatever i want can be here')
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Midlevel API</p>
-
+<h3 id="Midlevel-API">
+<a class="anchor" href="#Midlevel-API" aria-hidden="true"><span class="octicon octicon-link"></span></a>Midlevel API<a class="anchor-link" href="#Midlevel-API"> </a>
+</h3>
 </div>
 </div>
 </div>
@@ -2916,11 +2936,15 @@ SimpleNamespace(anyname_i_want='whatever i want can be here')
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">DataBlock</span><span class="p">(</span><span class="n">blocks</span><span class="o">=</span><span class="p">(</span><span class="n">ImageBlock</span><span class="p">,</span> <span class="n">MultiCategoryBlock</span><span class="p">),</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-hide</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">DataBlock</span><span class="p">(</span><span class="n">blocks</span><span class="o">=</span><span class="p">(</span><span class="n">ImageBlock</span><span class="p">,</span> <span class="n">MultiCategoryBlock</span><span class="p">),</span>
                 <span class="c1">#  we'll use a column reader to read the columns fo the dataframe</span>
                  <span class="n">get_x</span><span class="o">=</span><span class="n">ColReader</span><span class="p">(</span><span class="n">cols</span><span class="o">=</span><span class="s1">'fname'</span><span class="p">,</span> <span class="n">pref</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">path</span><span class="o">/</span><span class="s1">'train'</span><span class="p">)</span><span class="o">+</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">sep</span><span class="p">),</span>
                  <span class="n">splitter</span> <span class="o">=</span> <span class="n">ColSplitter</span><span class="p">(</span><span class="n">col</span><span class="o">=</span><span class="s1">'is_valid'</span><span class="p">),</span>
@@ -2933,6 +2957,7 @@ SimpleNamespace(anyname_i_want='whatever i want can be here')
 </div>
 </div>
 
+    </details>
 </div>
     
 
@@ -3625,11 +3650,15 @@ SimpleNamespace(anyname_i_want='whatever i want can be here')
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">DataBlock</span><span class="p">(</span><span class="n">blocks</span><span class="o">=</span><span class="p">(</span><span class="n">ImageBlock</span><span class="p">,</span> <span class="n">MaskBlock</span><span class="p">),</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-hide</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">DataBlock</span><span class="p">(</span><span class="n">blocks</span><span class="o">=</span><span class="p">(</span><span class="n">ImageBlock</span><span class="p">,</span> <span class="n">MaskBlock</span><span class="p">),</span> 
                  <span class="n">get_items</span><span class="o">=</span><span class="n">get_image_files</span><span class="p">,</span>
                  <span class="n">splitter</span><span class="o">=</span><span class="n">RandomSplitter</span><span class="p">(</span><span class="n">valid_pct</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="mi">42</span><span class="p">),</span>
                 <span class="c1">#  pass in the function we defined to get y</span>
@@ -3643,6 +3672,7 @@ SimpleNamespace(anyname_i_want='whatever i want can be here')
 </div>
 </div>
 
+    </details>
 </div>
     
 
@@ -3992,11 +4022,15 @@ SimpleNamespace(anyname_i_want='whatever i want can be here')
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">DataBlock</span><span class="p">(</span><span class="n">blocks</span><span class="o">=</span><span class="p">(</span><span class="n">ImageBlock</span><span class="p">,</span> <span class="n">BBoxBlock</span><span class="p">,</span> <span class="n">BBoxLblBlock</span><span class="p">),</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-hide</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">DataBlock</span><span class="p">(</span><span class="n">blocks</span><span class="o">=</span><span class="p">(</span><span class="n">ImageBlock</span><span class="p">,</span> <span class="n">BBoxBlock</span><span class="p">,</span> <span class="n">BBoxLblBlock</span><span class="p">),</span>
                  <span class="n">get_x</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">o</span><span class="p">:</span> <span class="n">o</span><span class="p">,</span>
                  <span class="n">splitter</span> <span class="o">=</span> <span class="n">RandomSplitter</span><span class="p">(</span><span class="n">valid_pct</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="mi">42</span><span class="p">),</span>
                 <span class="c1">#  since we kinda have two labels, the bounding box and the bbox </span>
@@ -4014,6 +4048,7 @@ SimpleNamespace(anyname_i_want='whatever i want can be here')
 </div>
 </div>
 
+    </details>
 </div>
     
 
@@ -4361,11 +4396,15 @@ SimpleNamespace(anyname_i_want='whatever i want can be here')
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># categorize changes the labels to numericals categories</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-hide</span>
+<span class="c1"># categorize changes the labels to numericals categories</span>
 <span class="n">cat</span> <span class="o">=</span> <span class="n">Categorize</span><span class="p">()</span>
 <span class="n">Datasets</span><span class="p">([</span><span class="s1">'A'</span><span class="p">,</span> <span class="s1">'B'</span><span class="p">,</span> <span class="s1">'C'</span><span class="p">],</span> <span class="n">tfms</span><span class="o">=</span><span class="p">[</span><span class="n">cat</span><span class="p">])</span>
 <span class="c1"># vocab shows all the classes and to get the id for each class, pass it into cat</span>
@@ -4376,6 +4415,7 @@ SimpleNamespace(anyname_i_want='whatever i want can be here')
 </div>
 </div>
 
+    </details>
 <div class="output_wrapper">
 <div class="output">
 
@@ -4395,6 +4435,14 @@ SimpleNamespace(anyname_i_want='whatever i want can be here')
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>How do you know what <code>Categorize</code> does? Just question the class by adding <code>??</code> as shown below</p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -4415,11 +4463,15 @@ SimpleNamespace(anyname_i_want='whatever i want can be here')
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># this reads as for the images, create them as pillow images, for the labels, </span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-hide</span>
+<span class="c1"># this reads as for the images, create them as pillow images, for the labels, </span>
 <span class="c1"># get the labels from the parents in the files L and convert them to categories</span>
 <span class="n">ds_tfms</span> <span class="o">=</span> <span class="p">[[</span><span class="n">PILImage</span><span class="o">.</span><span class="n">create</span><span class="p">],</span> <span class="p">[</span><span class="n">parent_label</span><span class="p">,</span> <span class="n">Categorize</span><span class="p">()]]</span>
 </pre></div>
@@ -4428,17 +4480,22 @@ SimpleNamespace(anyname_i_want='whatever i want can be here')
 </div>
 </div>
 
+    </details>
 </div>
     
 
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># n_inp tells the dataset that there is only one tfm child-list for the image. </span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-hide</span>
+<span class="c1"># n_inp tells the dataset that there is only one tfm child-list for the image. </span>
 <span class="c1"># Comes in handy when you have 3 child-lists transforms. The default is 1</span>
 <span class="n">dsets</span> <span class="o">=</span> <span class="n">Datasets</span><span class="p">(</span><span class="n">files</span><span class="p">,</span> <span class="n">tfms</span><span class="o">=</span><span class="n">ds_tfms</span><span class="p">,</span> <span class="n">splits</span><span class="o">=</span><span class="n">split_idxs</span><span class="p">,</span> <span class="n">n_inp</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">dsets</span>
@@ -4448,6 +4505,7 @@ SimpleNamespace(anyname_i_want='whatever i want can be here')
 </div>
 </div>
 
+    </details>
 <div class="output_wrapper">
 <div class="output">
 
@@ -4583,11 +4641,15 @@ SimpleNamespace(anyname_i_want='whatever i want can be here')
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">flip</span> <span class="o">=</span> <span class="n">FlipItem</span><span class="p">(</span><span class="mf">1.</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-hide</span>
+<span class="n">flip</span> <span class="o">=</span> <span class="n">FlipItem</span><span class="p">(</span><span class="mf">1.</span><span class="p">)</span>
 <span class="n">_</span><span class="p">,</span><span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
 <span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="n">axs</span><span class="o">.</span><span class="n">flatten</span><span class="p">():</span>
     <span class="n">flipped</span> <span class="o">=</span> <span class="n">flip</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span><span class="o">*</span><span class="mf">1.5</span><span class="p">))</span>
@@ -4598,6 +4660,7 @@ SimpleNamespace(anyname_i_want='whatever i want can be here')
 </div>
 </div>
 
+    </details>
 <div class="output_wrapper">
 <div class="output">
 
@@ -4620,11 +4683,15 @@ SimpleNamespace(anyname_i_want='whatever i want can be here')
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">crop</span> <span class="o">=</span> <span class="n">RandomResizedCrop</span><span class="p">(</span><span class="mi">256</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-hide</span>
+<span class="n">crop</span> <span class="o">=</span> <span class="n">RandomResizedCrop</span><span class="p">(</span><span class="mi">256</span><span class="p">)</span>
 <span class="n">_</span><span class="p">,</span><span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
 <span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="n">axs</span><span class="o">.</span><span class="n">flatten</span><span class="p">():</span>
     <span class="n">cropped</span> <span class="o">=</span> <span class="n">crop</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
@@ -4635,6 +4702,7 @@ SimpleNamespace(anyname_i_want='whatever i want can be here')
 </div>
 </div>
 
+    </details>
 <div class="output_wrapper">
 <div class="output">
 
@@ -4654,6 +4722,14 @@ SimpleNamespace(anyname_i_want='whatever i want can be here')
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's see how <code>IntToFloatTensor</code> works</p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
