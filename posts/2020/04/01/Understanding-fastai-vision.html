@@ -10,16 +10,16 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Understanding is all we seek" />
 <meta property="og:description" content="Understanding is all we seek" />
-<link rel="canonical" href="https://tezike.github.io/blog/fastai/datablockapi/pytorch/2020/04/01/Understanding-fastai-vision.html" />
-<meta property="og:url" content="https://tezike.github.io/blog/fastai/datablockapi/pytorch/2020/04/01/Understanding-fastai-vision.html" />
+<link rel="canonical" href="https://tezike.github.io/posts/2020/04/01/Understanding-fastai-vision.html" />
+<meta property="og:url" content="https://tezike.github.io/posts/2020/04/01/Understanding-fastai-vision.html" />
 <meta property="og:site_name" content="Musings" />
-<meta property="og:image" content="https://tezike.github.io/blog/images/blog-posts/datablock_icon.png" />
+<meta property="og:image" content="https://tezike.github.io/images/blog-posts/datablock_icon.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-04-01T00:00:00-05:00" />
 <script type="application/ld+json">
-{"datePublished":"2020-04-01T00:00:00-05:00","dateModified":"2020-04-01T00:00:00-05:00","author":{"@type":"Person","name":"Ezike Tochukwu"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tezike.github.io/blog/fastai/datablockapi/pytorch/2020/04/01/Understanding-fastai-vision.html"},"description":"Understanding is all we seek","image":"https://tezike.github.io/blog/images/blog-posts/datablock_icon.png","@type":"BlogPosting","url":"https://tezike.github.io/blog/fastai/datablockapi/pytorch/2020/04/01/Understanding-fastai-vision.html","headline":"Understanding fastai.vision v2 Module","@context":"https://schema.org"}</script>
+{"datePublished":"2020-04-01T00:00:00-05:00","dateModified":"2020-04-01T00:00:00-05:00","author":{"@type":"Person","name":"Ezike Tochukwu"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tezike.github.io/posts/2020/04/01/Understanding-fastai-vision.html"},"description":"Understanding is all we seek","image":"https://tezike.github.io/images/blog-posts/datablock_icon.png","@type":"BlogPosting","url":"https://tezike.github.io/posts/2020/04/01/Understanding-fastai-vision.html","headline":"Understanding fastai.vision v2 Module","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://tezike.github.io/blog/feed.xml" title="Musings" /><link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://tezike.github.io/feed.xml" title="Musings" /><link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Understanding fastai.vision v2 Module | Musings</title>
 <meta name="generator" content="Jekyll v4.0.0" />
 <meta property="og:title" content="Understanding fastai.vision v2 Module" />
@@ -27,18 +27,18 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Understanding is all we seek" />
 <meta property="og:description" content="Understanding is all we seek" />
-<link rel="canonical" href="https://tezike.github.io/blog/fastai/datablockapi/pytorch/2020/04/01/Understanding-fastai-vision.html" />
-<meta property="og:url" content="https://tezike.github.io/blog/fastai/datablockapi/pytorch/2020/04/01/Understanding-fastai-vision.html" />
+<link rel="canonical" href="https://tezike.github.io/posts/2020/04/01/Understanding-fastai-vision.html" />
+<meta property="og:url" content="https://tezike.github.io/posts/2020/04/01/Understanding-fastai-vision.html" />
 <meta property="og:site_name" content="Musings" />
-<meta property="og:image" content="https://tezike.github.io/blog/images/blog-posts/datablock_icon.png" />
+<meta property="og:image" content="https://tezike.github.io/images/blog-posts/datablock_icon.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-04-01T00:00:00-05:00" />
 <script type="application/ld+json">
-{"datePublished":"2020-04-01T00:00:00-05:00","dateModified":"2020-04-01T00:00:00-05:00","author":{"@type":"Person","name":"Ezike Tochukwu"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tezike.github.io/blog/fastai/datablockapi/pytorch/2020/04/01/Understanding-fastai-vision.html"},"description":"Understanding is all we seek","image":"https://tezike.github.io/blog/images/blog-posts/datablock_icon.png","@type":"BlogPosting","url":"https://tezike.github.io/blog/fastai/datablockapi/pytorch/2020/04/01/Understanding-fastai-vision.html","headline":"Understanding fastai.vision v2 Module","@context":"https://schema.org"}</script>
+{"datePublished":"2020-04-01T00:00:00-05:00","dateModified":"2020-04-01T00:00:00-05:00","author":{"@type":"Person","name":"Ezike Tochukwu"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tezike.github.io/posts/2020/04/01/Understanding-fastai-vision.html"},"description":"Understanding is all we seek","image":"https://tezike.github.io/images/blog-posts/datablock_icon.png","@type":"BlogPosting","url":"https://tezike.github.io/posts/2020/04/01/Understanding-fastai-vision.html","headline":"Understanding fastai.vision v2 Module","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
-<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://tezike.github.io/blog/feed.xml" title="Musings" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://tezike.github.io/feed.xml" title="Musings" />
 
 <script>
 function wrap_img(fn) {
@@ -71,7 +71,7 @@ window.onload = wrap_img;
 </script>
 </head><body><header class="site-header">
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">Musings</a><nav class="site-nav">
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Musings</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -81,7 +81,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/blog/about/">About Me</a><a class="page-link" href="/blog/search/">Search</a><a class="page-link" href="/blog/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/about/">About Me</a><a class="page-link" href="/search/">Search</a><a class="page-link" href="/categories/">Tags</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -104,13 +104,13 @@ window.onload = wrap_img;
     
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
-        <a class="category-tags-link" href="/blog/categories/#fastai">fastai</a>
+        <a class="category-tags-link" href="/categories/#fastai">fastai</a>
         &nbsp;
       
-        <a class="category-tags-link" href="/blog/categories/#datablockAPI">datablockAPI</a>
+        <a class="category-tags-link" href="/categories/#datablockAPI">datablockAPI</a>
         &nbsp;
       
-        <a class="category-tags-link" href="/blog/categories/#pytorch">pytorch</a>
+        <a class="category-tags-link" href="/categories/#pytorch">pytorch</a>
         
       
       </p>
@@ -122,19 +122,19 @@ window.onload = wrap_img;
           <div class="px-2">
 
     <a href="https://github.com/tezike/blog/tree/master/_notebooks/2020-04-01-Understanding-fastai-vision.ipynb" role="button" target="_blank">
-<img class="notebook-badge-image" src="/blog/assets/badges/github.svg" alt="View On GitHub">
+<img class="notebook-badge-image" src="/assets/badges/github.svg" alt="View On GitHub">
     </a>
 </div>
 
           <div class="px-2">
     <a href="https://mybinder.org/v2/gh/tezike/blog/master?filepath=_notebooks%2F2020-04-01-Understanding-fastai-vision.ipynb" target="_blank">
-        <img class="notebook-badge-image" src="/blog/assets/badges/binder.svg" alt="Open In Binder"/>
+        <img class="notebook-badge-image" src="/assets/badges/binder.svg" alt="Open In Binder"/>
     </a>
 </div>
 
           <div class="px-2">
     <a href="https://colab.research.google.com/github/tezike/blog/blob/master/_notebooks/2020-04-01-Understanding-fastai-vision.ipynb" target="_blank">
-        <img class="notebook-badge-image" src="/blog/assets/badges/colab.svg" alt="Open In Colab"/>
+        <img class="notebook-badge-image" src="/assets/badges/colab.svg" alt="Open In Colab"/>
     </a>
 </div>
         </div>
@@ -4805,20 +4805,20 @@ SimpleNamespace(anyname_i_want='whatever i want can be here')
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/blog/fastai/datablockapi/pytorch/2020/04/01/Understanding-fastai-vision.html" hidden></a>
+</script><a class="u-url" href="/posts/2020/04/01/Understanding-fastai-vision.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
-  <data class="u-url" href="/blog/"></data>
+  <data class="u-url" href="/"></data>
 
   <div class="wrapper">
 
     <div class="footer-col-wrapper">
       <div class="footer-col">
         <p class="feed-subscribe">
-          <a href="/blog/feed.xml">
+          <a href="/feed.xml">
             <svg class="svg-icon orange">
-              <use xlink:href="/blog/assets/minima-social-icons.svg#rss"></use>
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
             </svg><span>Subscribe</span>
           </a>
         </p>
@@ -4828,7 +4828,7 @@ SimpleNamespace(anyname_i_want='whatever i want can be here')
       </div>
     </div>
 
-    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/https%3A%2F%2Fgithub.com%2Ftezike" title="https://github.com/tezike"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/https%3A%2F%2Ftwitter.com%2Frosickyzoro" title="https://twitter.com/rosickyzoro"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/https%3A%2F%2Fgithub.com%2Ftezike" title="https://github.com/tezike"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/https%3A%2F%2Ftwitter.com%2Frosickyzoro" title="https://twitter.com/rosickyzoro"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
 </div>
 
   </div>
